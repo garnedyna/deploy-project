@@ -27,4 +27,4 @@ try {
 app.use(Router);
 
 // listen on port
-app.listen(PORT, () => console.log("Server jalan"));
+app.listen(PORT, () => console.log(`Server jalan ${PORT}`));
