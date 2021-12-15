@@ -9,6 +9,7 @@ import Router from "./routes/routes.js";
 
 // Init express
 const app = express();
+const PORT = process.env.PORT || 3000
 // use express json
 app.use(express.json());
 // use cors
@@ -26,4 +27,4 @@ try {
 app.use(Router);
 
 // listen on port
-app.listen(3000, () => console.log("Server jalan at http://localhost:3000"));
+app.listen(PORT, () => console.log("Server jalan"));

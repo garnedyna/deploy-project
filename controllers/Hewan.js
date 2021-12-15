@@ -11,6 +11,15 @@ export const getHewan = async (req, res) => {
   }
 };
 
+export const startHewan = async (req, res) => {
+  try {
+    res.send("Welcome to our zoo pages");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+
 // Get hewan berdasarkan id
 export const getHewanById = async (req, res) => {
   try {
